@@ -53,27 +53,3 @@ function validatePhone() {
     }
 }
 
-
-
-
-// Get local json data
-function getJson() {
-    fetch('zip.json')
-      .then(function(res){
-        return res.json();
-      })
-      .then(function(data) {
-        console.log(data);
-        // This is an array so we have to loop through it
-        let output = '';
-  
-        data.forEach(function(post){
-          output += `<li>${post.title}</li>`;
-        });
-        document.getElementById('output').innerHTML = output;
-  
-      })
-      .catch(function(err){
-        console.log(err);
-      });
-  }
