@@ -1,0 +1,16 @@
+.page-title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.form-group {
+    margin-bottom: 30px;
+}
+.form-group label {
+    display: none;
+}
+.btn{
+    margin-top: 30px;
+}
